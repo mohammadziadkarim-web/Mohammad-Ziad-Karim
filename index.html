@@ -63,6 +63,13 @@
 
   /* HERO */
   .hero{padding:88px 0 96px;}
+  .avatar{
+    width:112px;height:112px;border-radius:50%;
+    object-fit:cover;object-position:center 12%;
+    border:3px solid var(--paper-2);
+    box-shadow:0 0 0 2px var(--accent);
+    margin-bottom:28px;
+  }
   .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:end;}
   .hero-eyebrow{font-size:0.9rem;font-weight:600;color:var(--muted);margin-bottom:18px;}
   .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);}
@@ -233,6 +240,7 @@
   <section class="hero" style="border-top:none;">
     <div class="wrap hero-grid">
       <div>
+        <img src="images/profile.jpg" alt="Mohammad Ziad Karim" class="avatar">
         <div class="hero-eyebrow">Graphic Designer · Dhaka, Bangladesh</div>
         <h1>Mohammad Ziad Karim designs brands that <em>hold attention.</em></h1>
       </div>
