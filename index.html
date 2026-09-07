@@ -147,6 +147,23 @@
     .feature-card{padding:24px;}
   }
 
+  .carousel-scroll{
+    display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
+    padding-bottom:8px;-webkit-overflow-scrolling:touch;
+  }
+  .carousel-scroll figure{
+    flex:0 0 auto;width:320px;scroll-snap-align:start;
+    border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#fff;
+  }
+  .carousel-scroll img{width:100%;aspect-ratio:1/1;object-fit:cover;}
+  .carousel-scroll figcaption{
+    font-size:0.78rem;font-weight:600;color:var(--muted);padding:10px 12px;
+    border-top:1px solid var(--line);
+  }
+  @media(max-width:600px){
+    .carousel-scroll figure{width:78vw;}
+  }
+
   /* PROJECT LIST */
   .proj-row{
     display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:20px;align-items:center;
@@ -211,6 +228,8 @@
   .contact-info div{border-top:1px solid var(--line);padding:16px 0;}
   .contact-info div span{display:block;font-size:0.78rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px;}
   .contact-info div b{font-size:1rem;}
+  .contact-info div b a{color:var(--accent);}
+  .contact-info div b a:hover{text-decoration:underline;}
   @media(max-width:820px){.contact-grid{grid-template-columns:1fr;}}
 
   footer{padding:32px 0;border-top:1px solid var(--line);}
@@ -300,20 +319,88 @@
         </div>
       </div>
 
+      <!-- Featured: Nexo Carousel -->
+      <div class="feature-card">
+        <div class="feature-top">
+          <div>
+            <span class="tag">Current project</span>
+            <h3>Nexo — brand consistency carousel</h3>
+            <div class="client">Client: Fyntix · AI‑powered car marketplace app</div>
+            <p>A companion Instagram carousel built to prove the Nexo identity holds up everywhere it's placed — app icon, wireframe, key visual, signage and billboard scale — plus a light/dark CTA button study for the app's interface.</p>
+          </div>
+          <div class="feature-meta">
+            <div><b>Role</b><span>Graphic Designer</span></div>
+            <div><b>Format</b><span>Instagram carousel</span></div>
+            <div><b>Tools</b><span>Canva, Photoshop</span></div>
+            <div><b>Year</b><span>2026 — ongoing</span></div>
+          </div>
+        </div>
+
+        <div class="carousel-scroll">
+          <figure><img src="images/nexo-carousel/carousel_1.jpg" alt="Nexo identity across app icon, wireframe and key visual" loading="lazy"><figcaption>App icon, wireframe & key visual — one system</figcaption></figure>
+          <figure><img src="images/nexo-carousel/carousel_2.jpg" alt="Nexo lightbox signage and billboard ad" loading="lazy"><figcaption>Lightbox signage & billboard scale</figcaption></figure>
+          <figure><img src="images/nexo-carousel/carousel_3.jpg" alt="Nexo light and dark mode button study" loading="lazy"><figcaption>Light/dark CTA button consistency</figcaption></figure>
+        </div>
+      </div>
+
+      <!-- Featured: Fanshawe -->
+      <div class="feature-card">
+        <div class="feature-top">
+          <div>
+            <span class="tag" style="background:var(--ink);">Client work</span>
+            <h3>Fanshawe Driving School — Winter Campaign</h3>
+            <div class="client">Client: Fanshawe Driving School</div>
+            <p>A social media campaign built around one message: prepare before the weather forces you to. Each post pairs a bold headline with real winter-driving scenarios to push urgency without fear-mongering.</p>
+          </div>
+          <div class="feature-meta">
+            <div><b>Role</b><span>Graphic Designer</span></div>
+            <div><b>Format</b><span>Instagram carousel & posts</span></div>
+            <div><b>Tools</b><span>Canva</span></div>
+            <div><b>Year</b><span>2025</span></div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure><img src="images/fanshawe/fanshawe_1.jpg" alt="Fanshawe Driving School build confidence before winter ad" loading="lazy"><figcaption>Build confidence before winter starts</figcaption></figure>
+          <figure><img src="images/fanshawe/fanshawe_2.jpg" alt="Fanshawe Driving School waiting for snow post" loading="lazy"><figcaption>Waiting for snow is too late</figcaption></figure>
+          <figure><img src="images/fanshawe/fanshawe_3.jpg" alt="Fanshawe Driving School braking control tip" loading="lazy"><figcaption>Practice braking & control early</figcaption></figure>
+          <figure><img src="images/fanshawe/fanshawe_4.jpg" alt="Fanshawe Driving School preparation reduces panic" loading="lazy"><figcaption>Preparation reduces panic</figcaption></figure>
+          <figure><img src="images/fanshawe/fanshawe_5.jpg" alt="Fanshawe Driving School start before the storm" loading="lazy"><figcaption>Start before the storm</figcaption></figure>
+        </div>
+      </div>
+
+      <!-- Featured: Scale Driving -->
+      <div class="feature-card">
+        <div class="feature-top">
+          <div>
+            <span class="tag" style="background:var(--ink);">Client work</span>
+            <h3>Scale Driving — Static Ad Series</h3>
+            <div class="client">Client: Scale Driving · Marketing agency for driving schools</div>
+            <p>A 9‑piece static ad series built around one niche positioning: Scale Driving works exclusively with driving schools, and only one per city. Every post repeats the offer, the exclusivity rule, and a single clear CTA — built to convert, not just inform.</p>
+          </div>
+          <div class="feature-meta">
+            <div><b>Role</b><span>Graphic Designer</span></div>
+            <div><b>Format</b><span>Static ad series</span></div>
+            <div><b>Tools</b><span>Canva, Photoshop</span></div>
+            <div><b>Year</b><span>2025</span></div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure><img src="images/scale-driving/scale_1.jpg" alt="Scale Driving we only work with driving schools ad" loading="lazy"><figcaption>We only work with driving schools</figcaption></figure>
+          <figure><img src="images/scale-driving/scale_2.jpg" alt="Scale Driving one city one school ad" loading="lazy"><figcaption>One city. One school. Ever.</figcaption></figure>
+          <figure><img src="images/scale-driving/scale_3.jpg" alt="Scale Driving everything under one roof ad" loading="lazy"><figcaption>Everything under one roof</figcaption></figure>
+          <figure><img src="images/scale-driving/scale_4.jpg" alt="Scale Driving zero risk ad" loading="lazy"><figcaption>Try us with zero risk</figcaption></figure>
+          <figure><img src="images/scale-driving/scale_5.jpg" alt="Scale Driving real team ad" loading="lazy"><figcaption>A real team, not one person</figcaption></figure>
+          <figure><img src="images/scale-driving/scale_6.jpg" alt="Scale Driving real schools real results ad" loading="lazy"><figcaption>Real schools. Real results.</figcaption></figure>
+          <figure><img src="images/scale-driving/scale_7.jpg" alt="Scale Driving generic marketing doesn't work ad" loading="lazy"><figcaption>Generic marketing doesn't work here</figcaption></figure>
+          <figure><img src="images/scale-driving/scale_8.jpg" alt="Scale Driving we handle it you teach ad" loading="lazy"><figcaption>We handle it. You teach.</figcaption></figure>
+          <figure><img src="images/scale-driving/scale_9.jpg" alt="Scale Driving city might already be claimed ad" loading="lazy"><figcaption>Your city might already be claimed</figcaption></figure>
+        </div>
+      </div>
+
       <!-- Other projects list -->
       <div>
-        <div class="proj-row">
-          <h4>Fanshawe Driving School — Campaign</h4>
-          <div class="cat">Social media · Instagram carousel</div>
-          <div class="year">2025</div>
-          <div class="arrow">→</div>
-        </div>
-        <div class="proj-row">
-          <h4>Scale Driving — Static Ad Series</h4>
-          <div class="cat">Social media · 9‑piece ad campaign</div>
-          <div class="year">2025</div>
-          <div class="arrow">→</div>
-        </div>
         <div class="proj-row">
           <h4>PackagingVerde — Skincare</h4>
           <div class="cat">Sustainable packaging design</div>
@@ -414,6 +501,10 @@
           <div class="bar-label"><span>MS Word & Excel</span><span>Working knowledge</span></div>
           <div class="bar-track"><div class="bar-fill" style="width:55%;"></div></div>
         </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>Figma</span><span>Currently learning</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:25%;"></div></div>
+        </div>
       </div>
       <div>
         <h2 style="font-size:1.8rem;margin-bottom:24px;">Language</h2>
@@ -455,12 +546,12 @@
           <div class="tl-item">
             <div class="tl-date">2023 — Ongoing</div>
             <h4>B.Sc in EEE</h4>
-            <div class="tl-org">World University of Bangladesh · 3rd year</div>
+            <div class="tl-org">EUB · 3rd year</div>
           </div>
           <div class="tl-item">
             <div class="tl-date">2022</div>
             <h4>Diploma in Engineering (Electrical)</h4>
-            <div class="tl-org">Dhaka Polytechnic Institute · Result: 3.18 / 4.00</div>
+            <div class="tl-org">Dhaka Polytechnic Institute</div>
           </div>
           <div class="tl-item">
             <div class="tl-date">Ongoing</div>
@@ -484,6 +575,7 @@
       <div class="contact-info">
         <div><span>Email</span><b>mohammadziadkarim@gmail.com</b></div>
         <div><span>Phone</span><b>01741492676 / 01911912407</b></div>
+        <div><span>Instagram</span><b><a href="https://www.instagram.com/ziadkarim.official/" target="_blank" rel="noopener">@ziadkarim.official</a></b></div>
         <div><span>Location</span><b>House-82-B, Rd-4/6, Block-B, Section-12, Pallabi-Mirpur, Dhaka</b></div>
       </div>
     </div>
